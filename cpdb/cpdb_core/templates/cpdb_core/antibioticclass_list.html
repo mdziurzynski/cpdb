@@ -1,0 +1,33 @@
+{% extends "cpdb_core/base.html" %}
+
+{% block site_body %}
+<br/>
+<br/>
+<!--<p>ARGP classes</p>
+{% if view.request.path_info|slice:":14" == "/argp_classes" %}<p>{{view.get_template_names.0}}</p>{% endif %}-->
+<h2>Antibiotic Resistance Gene Primers <br/><h3>by antibiotic classes</h3></h2>
+<br/>
+<br/>
+<div class="grid center" data-masonry='{ "fitWidth": true, "itemSelector": ".grid-item", "columnWidth": 50 }'>
+{% for class in object_list %}
+    {% if class.targetgene_set.all %}
+        <div class="card border-secondary mb-3 grid-item" style="min-width: 10rem; max-width: 20rem">
+            <a href="{% url 'cpdb_core:argp_classes_detail' class.pk %}"><div class="card-header">{{class.name}}</div></a>
+            <div class="card-body text-secondary">
+                <!--<h5 class="card-title">Secondary card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                <ul>
+                    {% for gene in class.targetgene_set.all %}
+                        <li class="font-italic">{{ gene.name }}</li>
+                    {% endfor %}
+                </ul><p>
+            </div>
+        </div>
+    {% endif %}
+
+{% empty %}
+    <p>Well apparently we have no data on this:(</p>
+{% endfor %}
+</div>
+
+{% endblock %}
