@@ -4,6 +4,9 @@
 <html>
 <head>
     <title>Curated Primers Database</title>
+    <meta charset="utf-8"/>
+    <meta name="robots" content="follow"/>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -15,7 +18,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-static-top">
-        <a class="navbar-brand" href="{% url 'cpdb_core:home' %}">CPDb</a>
+        <a class="navbar-brand" href="{% url 'cpdb_core:home' %}"><strong>CPDb</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,10 +28,17 @@
                 {% if view.template_name == 'cpdb_core/home.html'%} active {% endif %}">
                     <a class="nav-link" href="{% url 'cpdb_core:home' %}">Home</a>
                 </li>
-                <li class="nav-item
+                <!-- <li class="nav-item
                 {% if view.request.path_info|slice:':13' == '/argp_classes'%} active {% endif %}">
                     <a class="nav-link" href="{% url 'cpdb_core:argp_classes_list'%}">Antibiotic Resistance</a>
                 </li>
+                <li class="nav_item">
+                    <a class="nav-link" href="#">Submit</a>
+                </li>
+                <li class="nav_item
+                {% if view.request.path_info == '/download'%} active {% endif %}">
+                    <a class="nav-link" href="{% url 'cpdb_core:download' %}">Download</a>
+                </li> -->
                 <li class="nav-item
                 {% if view.template_name == 'cpdb_core/contact.html'%} active {% endif %}">
                     <a class="nav-link" href="{% url 'cpdb_core:contact' %}">Contact</a>
@@ -40,5 +50,8 @@
     <main role="main" class="container">
     {% block site_body %}{% endblock %}
     </main>
+    <!--<nav class="navbar fixed-bottom navbar-light bg-light">
+        <a class="navbar-text center" href="#">webmaster: mikolaj.dziurzynski@biol.uw.edu.pl</a>
+    </nav>-->
 </body>
 </html>

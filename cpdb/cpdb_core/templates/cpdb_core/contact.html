@@ -1,5 +1,19 @@
 {% extends "cpdb_core/base.html" %}
 
 {% block site_body %}
-<p>Contact</p>
+    <br/>
+    <br/>
+    <br/>
+    <div class="row" id="about">
+        <h3><strong>CPDb Team</strong></h3>
+    </div>
+    <div class="row">
+        <p>{{object.address|linebreaks}}</p>
+    </div>
+    <div class="row">
+        <p>website: <a target="_blank" href="{{object.group_website}}">{{object.group_website}}</a></p>
+    </div>
+    <!-- <div class="row">
+       <p>contact email: <a href="mailto:{{object.email_contact}}">{{object.email_contact}}</a></p> 
+    </div> -->
 {% endblock %}

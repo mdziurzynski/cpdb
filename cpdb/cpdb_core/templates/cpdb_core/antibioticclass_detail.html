@@ -1,6 +1,30 @@
 {% extends "cpdb_core/base.html" %}
 
 {% block site_body %}
-<br/>
-<p>DETAIL on {{ object.name }} {{view.request.path_info|slice:':13'}}</p>
+
+    <br/>
+    <br/>
+    <h3>{{object.name}}</h3>
+    <br/>
+    <br/>
+    <div class="grid center" data-masonry='{ "fitWidth": true, "itemSelector": ".grid-item", "columnWidth": 50 }'>
+    {% for gene in object.targetgene_set.all %}
+        <div class="card border-secondary mb-3 grid-item" style="min-width: 10rem; max-width: 20rem">
+            <a href="{% url 'cpdb_core:targetgene_detail' gene.pk %}"><div class="card-header">{{gene.name}}</div></a>
+            <div class="card-body text-secondary">
+                <!--<h5 class="card-title">Secondary card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                <ul>
+                    {% for primerpair in gene.primerpair_set.all %}
+                        <li class="font-italic">{{ primerpair.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+    {% empty %}
+        <p style="min-width: 20rem;">Well apparently we have no data on this:(</p>
+    {% endfor %}
+    </div>
+
 {% endblock %}

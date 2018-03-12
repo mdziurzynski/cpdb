@@ -6,3 +6,14 @@ navbar-custom {
      margin-left: auto;
      margin-right: auto;
 }
+#about {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.logo-home {
+    width: 270;
+    height: 270px;
+    border: none;
+    background-color: transparent;
+
+}

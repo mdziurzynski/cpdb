@@ -1,0 +1,8 @@
+{% extends "cpdb_core/base.html" %}
+
+{% block site_body %}
+    <br/>
+    <br/>
+    <h3>Gene <em>{{object.name}}</em> of class <a href="{% url 'cpdb_core:argp_classes_detail' object.antibiotic_class.pk %}">{{object.antibiotic_class.name}}</a></h3>
+
+{% endblock %}
