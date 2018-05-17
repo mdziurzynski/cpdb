@@ -5,7 +5,7 @@ from django.shortcuts import render
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
 
-from cpdb_args.models import AntibioticClass, ARGene, INPUT_FILE_HEADER
+from cpdb_args.models import AntibioticClass, ARGene, InputFile, INPUT_FILE_HEADER
 from cpdb_args.forms import InputFileForm
 
 
@@ -68,7 +68,12 @@ class InputFileView(TemplateView):
                         'form': form,
                         'context': context,
                         'error': "BAD CSV HEADER!<br/><br/>RECEIVED HEADER:{0}".format(header)})
-            new_record.clone_tables()
+            try:
+                new_record.load_file()
+            except Exception as e:
+                new_record.delete()
+                InputFile.restore_last_correct_file()
+                raise Exception(e)
             
         else:
             return render(request, self.template_name, {'form': form, 'context': context, 'error': "INVALID FORM DATA!"})

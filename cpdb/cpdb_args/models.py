@@ -1,4 +1,6 @@
 from django.db import models
+import csv
+import re
 
 # Create your models here.
 INPUT_FILE_HEADER = [
@@ -12,6 +14,12 @@ INPUT_FILE_HEADER = [
     'primerr_gccontent', 'primerr_mt', 'primer_pair_tm_difference', 'qpcr_usage',
     'elongation_time', 'annealing_temp', 'reference_sequence_coverage',
     'min_refseq_lenght', 'max_refseq_lenght', 'difference_refseq_lenght']
+
+INPUT_FILE_COLS_TYPES = [
+    str, str, str, str, str, str, float, float, str, float, float, float, float,
+    float, float, float, float, float, float, float, float, float, float,
+    float, '%', float, float, '%', float, float, str, str, float, '%', float,
+    float, float]
 
 
 class AntibioticClass(models.Model):
@@ -30,9 +38,8 @@ class ARGene(models.Model):
 
 
 class ARGPrimerPair(models.Model):
-    name = models.CharField(max_length=50)
-    primer_for_seq = models.CharField(max_length=100)
-    primer_rev_seq = models.CharField(max_length=100)
+
+    file_line_id = models.IntegerField()
 
     # input table columns
     antibiotic_class = models.ForeignKey(AntibioticClass)
@@ -67,7 +74,7 @@ class ARGPrimerPair(models.Model):
     primerr_mt = models.FloatField()
     primer_pair_tm_difference = models.FloatField()
     qpcr_usage = models.CharField(max_length=100)
-    elongation_time = models.FloatField()
+    elongation_time = models.CharField(max_length=10)
     annealing_temp = models.FloatField()
     reference_sequence_coverage = models.FloatField()
     min_refseq_lenght = models.FloatField()
@@ -79,6 +86,62 @@ class InputFile(models.Model):
     upload_date = models.DateTimeField(auto_now_add=True)
     uploaded_file = models.FileField()
 
+    def load_file(self):
+
+        # 1. build dicts with cleaned data
+        unique_anti_class = {}
+        unique_gene = {}
+        res_lines = []
+        with self.uploaded_file.open("rt") as input_file:
+            reader = csv.reader(csvfile)
+
+            # skipping header
+            _ = next(reader)
+
+            for line in reader:
+                cleaned_line = []
+                line_with_types = zip(line, INPUT_FILE_COLS_TYPES)
+                for pair in line_with_types:
+                    if pair[1] == str:
+                        cleaned_line.push(pair[0])
+                    elif pair[1] == float:
+                        cleaned_line.push(float(pair[0]))
+                    elif pair[1] == '%':
+                        data = float(pair[0].strip('%')) / 100
+                        cleaned_line.append(data)
+
+                line_dict = dict(zip(INPUT_FILE_HEADER, cleaned_line))
+
+                line_dict['antibiotic_class'] = line_dict['antibiotic_class'].capitalize()
+                line_dict["gene_name"] = re.sub('_[1-9]*$', '', line_dict["gene_name_variants"])
+                del line_dict['gene_name_variants']
+
+                unique_anti_class[line_dict['antibiotic_class']] = 0
+                unique_gene[line_dict["gene_name_variants"]] = 0
+                res_lines.append(line_dict)
+
+        # 2. delete data in anti_class, gene and primer pair tables
+        AntibioticClass.objects.all().delete()
+        ARGene.objects.all().delete()
+        ARGPrimerPair.objects.all().delete()
+
+        # 3. Iterate through build dict and input data
+        for anti_class_name in unique_anti_class:
+            new = AntibioticClass.objects.create(name=anti_class_name)
+            new.save()
+            unique_anti_class[anti_class_name] = new.id
+
+        for gene_name in unique_gene:
+            new = ARGene.objects.create(name=gene_name)
+            new.save()
+            unique_gene[gene_name] = new.id
+
+
+
+    def restore_last_correct_file(self):
+        last_correct_instance = self.objects.last()
+        last_correct_instance.load_file()
+        return True
 
 # class FileLink(models.Model):
 #     name = models.CharField(max_length=200)
