@@ -1,0 +1,5 @@
+mdz@dextertower:~/projects/cpdb/cpdb$ soure[Ke[Kce ../env/bin/activate
+(env) mdz@dextertower:~/projects/cpdb/cpdb$ ls
+[0m[01;34mcpdb[0m  [01;34mcpdb_args[0m  [01;34mcpdb_core[0m  db.sqlite3  [01;32mmanage.py[0m  screenlog.0
+(env) mdz@dextertower:~/projects/cpdb/cpdb$ exit
+exit

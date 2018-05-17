@@ -1,0 +1,16 @@
+{% extends "cpdb_args/args_base.html" %}
+{% load static %}
+{% block args_body %}
+<h3>CSV file upload - building new database.</h3>
+<form action="/args/args_file_upload/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% if error %}
+    <div class="alert alert-danger "><strong>{{ error|safe }}</strong></div>
+    <br/>
+    {% endif %}
+    {{ form.uploaded_file }}
+
+    <input type="password" id="file_upload_password" name="file_upload_password" maxlength="254" placeholder="password">
+    <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}

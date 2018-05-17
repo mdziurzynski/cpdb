@@ -1,0 +1,25 @@
+{% extends "cpdb_args/args_base.html" %}
+{% load static %}
+{% block args_body %}
+<div class="grid center" data-masonry='{ "fitWidth": true, "itemSelector": ".grid-item", "columnWidth": 50 }'>
+    {% for class in object_list %}
+        {% comment %}{% if class.targetgene_set.all %}{% endcomment %}
+            <div class="card border-secondary mb-3 grid-item" style="min-width: 15rem; max-width: 20rem">
+                <a href="{% url 'cpdb_args:args_antibiotic_class' class.pk %}"><div class="card-header">{{class.name}}</div></a>
+                <div class="card-body text-secondary">
+                    <!--<h5 class="card-title">Secondary card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+                    <ul>
+                        {% for gene in class.argene_set.all %}
+                            <li class="font-italic">{{ gene.name }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        {% comment %}{% endif %}{% endcomment %}
+
+    {% empty %}
+        <p style="min-width: 15rem;">Well apparently we have no data here, sorry:(</p>
+    {% endfor %}
+</div>
+{% endblock %}

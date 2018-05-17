@@ -14,19 +14,11 @@
             <h2><strong>Welcome to the Curated Primers Database</strong></h2>
             <br/>
             <p class="lead lead-custom">CPDb gathers, verifies and compares properties of hundreds of primer pairs published over the years. At the moment, we present primer pairs dedicated to identification of antibiotic resistance genes. In the near future, the database will be extended to include heavy metals resistance and taxonomy marker gene primers.</p>
-            <p>CPDb has not been published yet, if you would like us to notify you about its release, please leave your email below: </p>
-            <form action="/" method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form }}
-                <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
-            </form>
         </div>
         <div class="col-md-4" style="display: flex; justify-content: center;">
             <img src="{% static 'cpdb_core/cpdb_logo2.png' %}" class="img-thumbnail logo-home">
         </div>
     </div>
-    <!-- <p>Please cite primer authors and our database with:</p> -->
-    <!-- <a class="btn btn-lg btn-primary" href="{% url 'cpdb_core:argp_classes_list' %}" role="button">Antibiotic Resistance Gene Primers »</a> -->
 </div>
 <!-- <p>Tutaj można dodać jakiś opis.</p> -->
 {% endblock %}

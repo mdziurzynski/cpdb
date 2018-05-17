@@ -1,0 +1,20 @@
+{% extends "cpdb_core/base.html" %}
+{% load static %}
+{% block site_body %}
+<br/>
+<div class="jumbotron" style="padding-bottom: 40px !important">
+    
+    <div class="row">
+        <div class="col-md-8">
+            <h2><strong>Antibiotic Resistance Gene Primers</strong></h2>
+            <br/>
+            <p class="lead lead-custom">So we have some hot primers for you!</p>
+        </div>
+        <div class="col-md-4" style="display: flex; justify-content: center;">
+            <div class="img-thumbnail" style="background-color: red; height: 100px; width:300px; font-size: 60px; text-align: center">ARGS</div>
+        </div>
+    </div>
+</div>
+<br/>
+{% block args_body %}{% endblock %}
+{% endblock %}

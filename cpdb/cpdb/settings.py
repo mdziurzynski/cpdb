@@ -25,7 +25,7 @@ SECRET_KEY = 'xb^rqpp0jmx)&9^^jmbbpecd)q5w!xo4=p!l6#0z*+&th7y4p@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', '212.87.9.193', 'cpdb.ddg.biol.uw.edu.pl']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cpdb_core',
+    'cpdb_args',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +75,21 @@ WSGI_APPLICATION = 'cpdb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'cpdb_test',
+        'USER': 'cpdb',
+        'PASSWORD': 'testing_cpdb',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
@@ -120,4 +132,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-ALLOWED_HOSTS = ['192.168.37.242', 'localhost']
+ALLOWED_HOSTS = ['192.168.37.242', 'localhost', 'cpdb.ddg.biol.uw.edu.pl']
+
+MEDIA_ROOT = "cpdb_storage/"
+
+INPUT_FILE_PASSWORD = "mleko"

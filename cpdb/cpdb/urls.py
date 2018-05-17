@@ -20,4 +20,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('cpdb_core.urls', namespace='cpdb_core')),
+    url(r'^args/', include('cpdb_args.urls', namespace='cpdb_args')),
 ]

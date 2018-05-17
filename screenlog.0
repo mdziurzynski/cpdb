@@ -1,0 +1,1157 @@
+mdz@dextertower:~/projects/cpdb$ source env/bin/activate
+(env) mdz@dextertower:~/projects/cpdb$ cd ma[K[Kcpdb/
+(env) mdz@dextertower:~/projects/cpdb/cpdb$ ls
+[0m[01;34mcpdb[0m  [01;34mcpdb_core[0m  db.sqlite3  [01;32mmanage.py[0m
+(env) mdz@dextertower:~/projects/cpdb/cpdb$ ./manage.py runserver 5556
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 21, 2018 - 16:18:45
+Django version 1.11, using settings 'cpdb.settings'
+Starting development server at http://127.0.0.1:5556/
+Quit the server with CONTROL-C.
+[21/Mar/2018 17:49:29] [m"GET / HTTP/1.1" 200 4544[0m
+Not Found: /favicon.ico
+[21/Mar/2018 17:49:29] [33m"GET /favicon.ico HTTP/1.1" 404 3279[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[21/Mar/2018 18:35:23] [31;1m"GET / HTTP/1.1" 400 67136[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[21/Mar/2018 19:07:50] [31;1m"GET / HTTP/1.1" 400 67362[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[21/Mar/2018 20:57:04] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[21/Mar/2018 21:13:57] [31;1m"GET / HTTP/1.1" 400 67356[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[21/Mar/2018 21:14:07] [31;1m"GET /webdav HTTP/1.1" 400 67427[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[21/Mar/2018 21:14:57] [31;1m"GET / HTTP/1.1" 400 67357[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[21/Mar/2018 21:14:58] [31;1m"GET / HTTP/1.1" 400 67357[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[21/Mar/2018 21:20:53] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67444[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 00:02:50] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 02:10:37] [31;1m"GET /robots.txt HTTP/1.1" 400 67695[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 02:10:41] [31;1m"GET / HTTP/1.1" 400 67725[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 05:04:41] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Not Found: /robots.txt
+[22/Mar/2018 06:43:27] [33m"GET /robots.txt HTTP/1.1" 404 3276[0m
+[22/Mar/2018 06:43:31] [m"GET / HTTP/1.1" 200 4544[0m
+Not Found: /favicon.ico
+[22/Mar/2018 10:29:02] [33m"GET /favicon.ico HTTP/1.1" 404 3279[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:39:48] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:56:56] [31;1m"GET /index.php HTTP/1.1" 400 67503[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:56:56] [31;1m"GET /phpmyadmin/index.php HTTP/1.1" 400 67624[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:56:57] [31;1m"GET /phpMyAdmin/index.php HTTP/1.1" 400 67624[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:00] [31;1m"GET /pma/index.php HTTP/1.1" 400 67547[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:00] [31;1m"GET /PMA/index.php HTTP/1.1" 400 67547[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:01] [31;1m"GET /PMA2/index.php HTTP/1.1" 400 67558[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:04] [31;1m"GET /pmamy2/index.php HTTP/1.1" 400 67580[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:04] [31;1m"GET /mysql/index.php HTTP/1.1" 400 67569[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:05] [31;1m"GET /admin/index.php HTTP/1.1" 400 67569[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:08] [31;1m"GET /db/index.php HTTP/1.1" 400 67536[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:08] [31;1m"GET /dbadmin/index.php HTTP/1.1" 400 67591[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:09] [31;1m"GET /web/phpMyAdmin/index.php HTTP/1.1" 400 67668[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:12] [31;1m"GET /admin/pma/index.php HTTP/1.1" 400 67613[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:12] [31;1m"GET /admin/PMA/index.php HTTP/1.1" 400 67613[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:13] [31;1m"GET /admin/mysql/index.php HTTP/1.1" 400 67635[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:16] [31;1m"GET /admin/phpmyadmin/index.php HTTP/1.1" 400 67690[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:16] [31;1m"GET /admin/phpMyAdmin/index.php HTTP/1.1" 400 67690[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:17] [31;1m"GET /admin/phpmyadmin2/index.php HTTP/1.1" 400 67701[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:20] [31;1m"GET /mysql-admin/index.php HTTP/1.1" 400 67635[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:20] [31;1m"GET /phpadmin/index.php HTTP/1.1" 400 67602[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:21] [31;1m"GET /phpmyadmin0/index.php HTTP/1.1" 400 67635[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:24] [31;1m"GET /phpmyadmin2/index.php HTTP/1.1" 400 67635[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:24] [31;1m"GET /myadmin/index.php HTTP/1.1" 400 67591[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:25] [31;1m"GET /myadmin2/index.php HTTP/1.1" 400 67602[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:28] [31;1m"GET /phpMyadmin_bak/index.php HTTP/1.1" 400 67668[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:28] [31;1m"GET /www/phpMyAdmin/index.php HTTP/1.1" 400 67668[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:29] [31;1m"GET /tools/phpMyAdmin/index.php HTTP/1.1" 400 67690[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:32] [31;1m"GET /pma-old/index.php HTTP/1.1" 400 67591[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:32] [31;1m"GET /claroline/phpMyAdmin/index.php HTTP/1.1" 400 67734[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:33] [31;1m"GET /typo3/phpmyadmin/index.php HTTP/1.1" 400 67690[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:35] [31;1m"GET /phpma/index.php HTTP/1.1" 400 67569[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 10:57:36] [31;1m"GET /phpMyAdmin/phpMyAdmin/index.php HTTP/1.1" 400 67745[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 15:40:12] [31;1m"GET /users/ HTTP/1.1" 400 67510[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 16:26:34] [31;1m"GET / HTTP/1.1" 400 67371[0m
+Invalid HTTP_HOST header: '192.168.0.20'. You may need to add '192.168.0.20' to ALLOWED_HOSTS.
+[22/Mar/2018 17:49:57] [31;1m"GET / HTTP/1.1" 400 67396[0m
+Invalid HTTP_HOST header: '192.168.0.20'. You may need to add '192.168.0.20' to ALLOWED_HOSTS.
+[22/Mar/2018 17:49:57] [31;1m"GET /HNAP1/ HTTP/1.1" 400 67462[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[22/Mar/2018 19:17:12] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 00:00:59] [31;1m"GET / HTTP/1.1" 400 67135[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 01:16:25] [31;1m"POST /wp-admin/admin-ajax.php HTTP/1.1" 400 70183[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 01:18:48] [31;1m"POST /wp-admin/admin-ajax.php HTTP/1.1" 400 70183[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 01:21:23] [31;1m"POST /wp-admin/admin-ajax.php HTTP/1.1" 400 70182[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 01:26:43] [31;1m"POST /wp-admin/admin-ajax.php HTTP/1.1" 400 70182[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 01:33:18] [31;1m"POST /wp-admin/admin-ajax.php HTTP/1.1" 400 70182[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 01:37:09] [31;1m"POST /wp-admin/admin-ajax.php HTTP/1.1" 400 70182[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 01:44:31] [31;1m"POST /wp-admin/admin-ajax.php HTTP/1.1" 400 70182[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 02:17:35] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 02:27:00] [31;1m"HEAD / HTTP/1.1" 400 67454[0m
+Invalid HTTP_HOST header: '178.162.210.6'. You may need to add '178.162.210.6' to ALLOWED_HOSTS.
+[23/Mar/2018 04:01:08] [31;1m"GET /proxychecker/check.cgi?action=getinfo HTTP/1.1" 400 68369[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 06:04:51] [31;1m"GET / HTTP/1.1" 400 67168[0m
+[23/Mar/2018 06:54:17] [m"GET / HTTP/1.1" 200 4544[0m
+Not Found: /favicon.ico
+[23/Mar/2018 06:54:17] [33m"GET /favicon.ico HTTP/1.1" 404 3279[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 07:22:46] [31;1m"GET / HTTP/1.1" 400 67265[0m
+[23/Mar/2018 08:54:36] [m"GET / HTTP/1.1" 200 4544[0m
+[23/Mar/2018 08:54:36] [36m"GET /static/cpdb_core/custom.css HTTP/1.1" 304 0[0m
+[23/Mar/2018 08:54:36] [36m"GET /static/cpdb_core/cpdb_logo2.png HTTP/1.1" 304 0[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 13:07:43] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 13:38:32] [31;1m"GET / HTTP/1.1" 400 67383[0m
+Not Found: /favicon.ico
+[23/Mar/2018 15:02:35] [33m"GET /favicon.ico HTTP/1.1" 404 3279[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 15:12:28] [31;1m"GET / HTTP/1.1" 400 67168[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 16:01:25] [31;1m"GET / HTTP/1.1" 400 67403[0m
+Invalid HTTP_HOST header: 'www.sciencedirect.com'. You may need to add 'www.sciencedirect.com' to ALLOWED_HOSTS.
+[23/Mar/2018 16:45:29] [31;1m"GET /science/article/pii/S1053811912009810 HTTP/1.1" 400 68108[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 17:10:30] [31;1m"GET /.git/HEAD HTTP/1.1" 400 67748[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 17:48:08] [31;1m"GET /hndUnblock.cgi HTTP/1.1" 400 67547[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 17:48:10] [31;1m"GET /tmUnblock.cgi HTTP/1.1" 400 67536[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 17:48:11] [31;1m"GET /moo HTTP/1.1" 400 67426[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 17:48:13] [31;1m"GET / HTTP/1.1" 400 67393[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 17:48:14] [31;1m"POST /getcfg.php HTTP/1.1" 400 68128[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 17:48:16] [31;1m"POST /getcfg.php HTTP/1.1" 400 68128[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 18:57:36] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 20:15:24] [31;1m"GET / HTTP/1.1" 400 67744[0m
+Not Found: /robots.txt
+[23/Mar/2018 20:28:18] [33m"GET /robots.txt HTTP/1.1" 404 3276[0m
+{'view': <cpdb_core.views.ContactView object at 0x7f4d2016eeb8>, 'object': <Contact: Contact object>}
+[23/Mar/2018 20:28:22] [m"GET /contact HTTP/1.1" 200 3293[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[23/Mar/2018 20:37:57] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[23/Mar/2018 23:35:30] [31;1m"GET / HTTP/1.1" 400 67525[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 00:02:04] [31;1m"GET /muieblackcat HTTP/1.1" 400 67663[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 00:02:09] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67839[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 00:02:10] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67839[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 00:02:10] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67762[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 00:02:11] [31;1m"GET /myadmin/scripts/setup.php HTTP/1.1" 400 67806[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 00:02:11] [31;1m"GET /MyAdmin/scripts/setup.php HTTP/1.1" 400 67806[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 02:29:10] [31;1m"GET /phpmyadmin HTTP/1.1" 400 67846[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[24/Mar/2018 02:57:53] [31;1m"GET / HTTP/1.1" 400 67360[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 05:27:21] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 07:40:02] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 10:22:06] [31;1m"GET /RELEASE-NOTES.txt HTTP/1.1" 400 67631[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[24/Mar/2018 11:21:48] [31;1m"GET / HTTP/1.1" 400 67525[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 17:16:23] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 19:31:17] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:20:39] [31;1m"GET /spa/ HTTP/1.1" 400 67488[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:51] [31;1m"GET / HTTP/1.1" 400 67805[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:52] [31;1m"GET / HTTP/1.1" 400 67805[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:52] [31;1m"GET / HTTP/1.1" 400 67805[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:53] [31;1m"GET /HNAP1/ HTTP/1.1" 400 67871[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:54] [31;1m"GET /HNAP1/ HTTP/1.1" 400 67871[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:54] [31;1m"GET /HNAP1/ HTTP/1.1" 400 67871[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:55] [31;1m"GET /hudson/script HTTP/1.1" 400 67948[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:56] [31;1m"GET /hudson/script HTTP/1.1" 400 67948[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:56] [31;1m"GET /hudson/script HTTP/1.1" 400 67948[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:57] [31;1m"GET /script HTTP/1.1" 400 67871[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:58] [31;1m"GET /script HTTP/1.1" 400 67871[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[24/Mar/2018 22:54:58] [31;1m"GET /script HTTP/1.1" 400 67871[0m
+Invalid HTTP_HOST header: 'www.wadpak.com'. You may need to add 'www.wadpak.com' to ALLOWED_HOSTS.
+[25/Mar/2018 01:53:07] [31;1m"HEAD /template/default/images/logo.png HTTP/1.1" 400 67747[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 03:59:52] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 05:14:07] [31;1m"POST /phppath/php?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 400 73841[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 05:14:07] [31;1m"POST /phppath/php5?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 400 73852[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 05:14:08] [31;1m"POST /phppath/php-cgi?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 400 73885[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 05:14:09] [31;1m"POST /phppath/php.cgi?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 400 73885[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 05:14:09] [31;1m"POST /phppath/php4?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 400 73852[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 05:14:09] [31;1m"POST /cgi-bin/cgi_wrapper?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 400 73929[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 05:14:09] [31;1m"POST /phppath/php4-cgi?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 400 73896[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 05:14:10] [31;1m"POST /phppath/cgi_wrapper?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 400 73929[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 05:14:10] [31;1m"POST /phppath/php5-cgi?%2D%64+%61%6C%6C%6F%77%5F%75%72%6C%5F%69%6E%63%6C%75%64%65%3D%6F%6E+%2D%64+%73%61%66%65%5F%6D%6F%64%65%3D%6F%66%66+%2D%64+%73%75%68%6F%73%69%6E%2E%73%69%6D%75%6C%61%74%69%6F%6E%3D%6F%6E+%2D%64+%64%69%73%61%62%6C%65%5F%66%75%6E%63%74%69%6F%6E%73%3D%22%22+%2D%64+%6F%70%65%6E%5F%62%61%73%65%64%69%72%3D%6E%6F%6E%65+%2D%64+%61%75%74%6F%5F%70%72%65%70%65%6E%64%5F%66%69%6C%65%3D%70%68%70%3A%2F%2F%69%6E%70%75%74+%2D%64+%63%67%69%2E%66%6F%72%63%65%5F%72%65%64%69%72%65%63%74%3D%30+%2D%64+%63%67%69%2E%72%65%64%69%72%65%63%74%5F%73%74%61%74%75%73%5F%65%6E%76%3D%30+%2D%6E HTTP/1.1" 400 73896[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 05:26:18] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 08:46:14] [31;1m"GET /myadmin/scripts/setup.php HTTP/1.1" 400 67933[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 08:55:19] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 10:37:53] [31;1m"GET / HTTP/1.1" 400 67535[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 11:29:29] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 13:13:48] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[25/Mar/2018 18:14:18] [31;1m"GET / HTTP/1.1" 400 67344[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 18:23:52] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[25/Mar/2018 18:33:28] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: 'www.wadpak.com'. You may need to add 'www.wadpak.com' to ALLOWED_HOSTS.
+[25/Mar/2018 20:12:24] [31;1m"HEAD /template/default/images/logo.png HTTP/1.1" 400 67747[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 00:39:55] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 02:12:48] [31;1m"GET / HTTP/1.1" 400 67642[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 04:26:32] [31;1m"GET / HTTP/1.1" 400 67403[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 06:00:09] [31;1m"HEAD /.git/index HTTP/1.1" 400 67395[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 06:19:05] [31;1m"GET /System/Security/hylogin.aspx HTTP/1.1" 400 67662[0m
+[26/Mar/2018 06:32:41] [m"GET / HTTP/1.1" 200 4544[0m
+Not Found: /favicon.ico
+[26/Mar/2018 06:32:41] [33m"GET /favicon.ico HTTP/1.1" 404 3279[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 06:37:50] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 07:37:25] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Not Found: /robots.txt
+[26/Mar/2018 08:04:45] [33m"GET /robots.txt HTTP/1.1" 404 3276[0m
+[26/Mar/2018 08:04:49] [m"GET / HTTP/1.1" 200 4544[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 08:40:46] [31;1m"HEAD /.env HTTP/1.1" 400 67700[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 09:00:32] [31;1m"GET /ccvv HTTP/1.1" 400 67490[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 12:20:10] [31;1m"GET / HTTP/1.1" 400 67384[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 12:48:53] [31;1m"GET / HTTP/1.1" 400 67136[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 13:14:44] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:22:20] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:32] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67821[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:33] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67821[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:33] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67744[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:33] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67821[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:33] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67766[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:34] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67788[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:34] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67766[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:34] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:34] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:34] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:35] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:35] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67700[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:35] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67843[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:35] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:35] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 14:54:36] [31;1m"GET /setup.php HTTP/1.1" 400 67612[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 16:16:10] [31;1m"GET /yealink/ HTTP/1.1" 400 67532[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 16:30:15] [31;1m"GET /System/Security/hylogin.aspx HTTP/1.1" 400 67662[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 17:33:19] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[26/Mar/2018 18:00:27] [31;1m"GET / HTTP/1.1" 400 67360[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:24] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:25] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:26] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67745[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:28] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:29] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:30] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67789[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:31] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:33] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:34] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:35] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:36] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:37] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67701[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:39] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67844[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:40] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:41] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 18:55:42] [31;1m"GET /setup.php HTTP/1.1" 400 67613[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[26/Mar/2018 22:22:56] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Not Found: /robots.txt
+[26/Mar/2018 22:40:19] [33m"GET /robots.txt HTTP/1.1" 404 3276[0m
+{'view': <cpdb_core.views.ContactView object at 0x7f4d20c8f3c8>, 'object': <Contact: Contact object>}
+[26/Mar/2018 22:40:23] [m"GET /contact HTTP/1.1" 200 3293[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:09] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:13] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:18] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67745[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:22] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:26] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:30] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67789[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:34] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:38] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:43] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:47] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:51] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:55] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67701[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:33:59] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67844[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:34:04] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:34:08] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 00:34:12] [31;1m"GET /setup.php HTTP/1.1" 400 67613[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 02:12:09] [31;1m"GET /robots.txt HTTP/1.1" 400 67726[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 02:12:09] [31;1m"GET /wp-content/tablepress-combined.min.css?ver=9 HTTP/1.1" 400 68810[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 02:12:10] [31;1m"GET /wp-content/themes/simple-style/style.css?ver=1.1 HTTP/1.1" 400 68848[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:19:18] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:25:11] [31;1m"HEAD /.env HTTP/1.1" 400 67700[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:17] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:19] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:20] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67746[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:22] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:24] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67768[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:25] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67790[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:27] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67768[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:28] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:30] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:32] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:33] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:35] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67702[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:37] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67845[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:38] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:40] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 03:49:41] [31;1m"GET /setup.php HTTP/1.1" 400 67614[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 04:00:03] [31;1m"GET / HTTP/1.1" 400 67384[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 04:19:24] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 05:23:53] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:19:58] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:10] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:10] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:10] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67745[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:11] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:11] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:11] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67789[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:11] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:12] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:12] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:12] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:13] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:13] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67701[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:13] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67844[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:13] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:14] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 10:48:14] [31;1m"GET /setup.php HTTP/1.1" 400 67613[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:24] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67821[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:24] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67821[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:25] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67744[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:25] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67821[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:25] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67766[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:26] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67788[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:26] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67766[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:26] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:27] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:27] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:27] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:28] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67700[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:28] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67843[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:28] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:29] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 11:08:29] [31;1m"GET /setup.php HTTP/1.1" 400 67612[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 13:09:36] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 13:17:39] [31;1m"GET /w00tw00t.at.blackhats.romanian.anti-sec:) HTTP/1.1" 400 68109[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 13:17:44] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67966[0m
+Invalid HTTP_HOST header: 'ddg'. You may need to add 'ddg' to ALLOWED_HOSTS.
+[27/Mar/2018 13:26:56] [31;1m"HEAD / HTTP/1.1" 400 67536[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:54] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:55] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:55] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67745[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:56] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:56] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:56] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67789[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:57] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:57] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:57] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:58] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:58] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:59] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67701[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:59] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67844[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:07:59] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:08:00] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:08:00] [31;1m"GET /setup.php HTTP/1.1" 400 67613[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:07] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:11] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:15] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67746[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:19] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:23] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67768[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:27] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67790[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:31] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67768[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:32] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:36] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:37] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:41] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:42] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67702[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:46] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67845[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:47] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:51] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 14:31:52] [31;1m"GET /setup.php HTTP/1.1" 400 67614[0m
+Invalid HTTP_HOST header: '192.168.0.20'. You may need to add '192.168.0.20' to ALLOWED_HOSTS.
+[27/Mar/2018 14:48:28] [31;1m"POST /StableWSDiscoveryEndpoint/schemas-xmlsoap-org_ws_2005_04_discovery HTTP/1.1" 400 68272[0m
+Invalid HTTP_HOST header: '192.168.0.20'. You may need to add '192.168.0.20' to ALLOWED_HOSTS.
+[27/Mar/2018 14:57:16] [31;1m"POST /StableWSDiscoveryEndpoint/schemas-xmlsoap-org_ws_2005_04_discovery HTTP/1.1" 400 68272[0m
+Invalid HTTP_HOST header: '192.168.0.20'. You may need to add '192.168.0.20' to ALLOWED_HOSTS.
+[27/Mar/2018 15:08:44] [31;1m"POST /StableWSDiscoveryEndpoint/schemas-xmlsoap-org_ws_2005_04_discovery HTTP/1.1" 400 68272[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 15:18:14] [31;1m"GET / HTTP/1.1" 400 67307[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[27/Mar/2018 15:43:38] [31;1m"GET / HTTP/1.1" 400 67361[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[27/Mar/2018 16:13:20] [31;1m"GET / HTTP/1.1" 400 67525[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 16:23:06] [31;1m"GET / HTTP/1.1" 400 67401[0m
+^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^C(env) mdz@dextertower:~/projects/cpdb/cpdb$ ./manage.py runserver 5556[K./manage.py runserver 5556
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 27, 2018 - 16:56:02
+Django version 1.11, using settings 'cpdb.settings'
+Starting development server at http://127.0.0.1:5556/
+Quit the server with CONTROL-C.
+Invalid HTTP_HOST header: '192.168.0.20'. You may need to add '192.168.0.20' to ALLOWED_HOSTS.
+[27/Mar/2018 17:14:21] [31;1m"POST /StableWSDiscoveryEndpoint/schemas-xmlsoap-org_ws_2005_04_discovery HTTP/1.1" 400 68272[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:10] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67821[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:14] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67821[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:18] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67744[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:22] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67821[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:26] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67766[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:29] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67788[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:33] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67766[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:37] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:41] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:45] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:49] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:53] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67700[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:56:57] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67843[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:57:01] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:57:04] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67832[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 17:57:08] [31;1m"GET /setup.php HTTP/1.1" 400 67612[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:33] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:35] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:36] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67745[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:38] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:39] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:41] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67789[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:42] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:44] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:46] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:47] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:49] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:50] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67701[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:52] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67844[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:53] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:55] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[27/Mar/2018 22:58:56] [31;1m"GET /setup.php HTTP/1.1" 400 67613[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 00:44:08] [31;1m"GET / HTTP/1.1" 400 67286[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 00:44:08] [31;1m"HEAD /redirect.php HTTP/1.1" 400 67425[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 01:06:01] [31;1m"GET / HTTP/1.1" 400 67641[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 01:34:51] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:09:45] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:35:30] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67820[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:35:36] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67820[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:35:42] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67743[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:35:46] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67820[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:35:51] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67765[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:35:55] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67787[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:36:07] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67765[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:36:12] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67831[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:36:14] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67831[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:36:19] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67831[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:36:24] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67831[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:36:29] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67699[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:36:36] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67842[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:36:39] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67831[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:36:47] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67831[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 02:36:52] [31;1m"GET /setup.php HTTP/1.1" 400 67611[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 04:21:44] [31;1m"GET /vendor/phpunit/phpunit/src/Util/Filter.php HTTP/1.1" 400 67870[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[28/Mar/2018 06:07:41] [31;1m"GET / HTTP/1.1" 400 67523[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 06:08:48] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:40] [31;1m"GET /index.php HTTP/1.1" 400 67503[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:41] [31;1m"GET /phpmyadmin/index.php HTTP/1.1" 400 67624[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:41] [31;1m"GET /phpMyAdmin/index.php HTTP/1.1" 400 67624[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:42] [31;1m"GET /pmd/index.php HTTP/1.1" 400 67547[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:43] [31;1m"GET /pma/index.php HTTP/1.1" 400 67547[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:44] [31;1m"GET /PMA/index.php HTTP/1.1" 400 67547[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:44] [31;1m"GET /PMA2/index.php HTTP/1.1" 400 67558[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:45] [31;1m"GET /pmamy/index.php HTTP/1.1" 400 67569[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:46] [31;1m"GET /pmamy2/index.php HTTP/1.1" 400 67580[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:47] [31;1m"GET /mysql/index.php HTTP/1.1" 400 67569[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:47] [31;1m"GET /admin/index.php HTTP/1.1" 400 67569[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:48] [31;1m"GET /db/index.php HTTP/1.1" 400 67536[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:49] [31;1m"GET /dbadmin/index.php HTTP/1.1" 400 67591[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:50] [31;1m"GET /web/phpMyAdmin/index.php HTTP/1.1" 400 67668[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:50] [31;1m"GET /admin/pma/index.php HTTP/1.1" 400 67613[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:51] [31;1m"GET /admin/PMA/index.php HTTP/1.1" 400 67613[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:52] [31;1m"GET /admin/mysql/index.php HTTP/1.1" 400 67635[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:53] [31;1m"GET /admin/mysql2/index.php HTTP/1.1" 400 67646[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:53] [31;1m"GET /admin/phpmyadmin/index.php HTTP/1.1" 400 67690[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:54] [31;1m"GET /admin/phpMyAdmin/index.php HTTP/1.1" 400 67690[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:55] [31;1m"GET /admin/phpmyadmin2/index.php HTTP/1.1" 400 67701[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:56] [31;1m"GET /mysqladmin/index.php HTTP/1.1" 400 67624[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:56] [31;1m"GET /mysql-admin/index.php HTTP/1.1" 400 67635[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:57] [31;1m"GET /phpadmin/index.php HTTP/1.1" 400 67602[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:58] [31;1m"GET /phpmyadmin0/index.php HTTP/1.1" 400 67635[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:59] [31;1m"GET /phpmyadmin1/index.php HTTP/1.1" 400 67635[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:41:59] [31;1m"GET /phpmyadmin2/index.php HTTP/1.1" 400 67635[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:00] [31;1m"GET /myadmin/index.php HTTP/1.1" 400 67591[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:01] [31;1m"GET /myadmin2/index.php HTTP/1.1" 400 67602[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:02] [31;1m"GET /xampp/phpmyadmin/index.php HTTP/1.1" 400 67690[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:02] [31;1m"GET /phpMyadmin_bak/index.php HTTP/1.1" 400 67668[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:03] [31;1m"GET /www/phpMyAdmin/index.php HTTP/1.1" 400 67668[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:04] [31;1m"GET /tools/phpMyAdmin/index.php HTTP/1.1" 400 67690[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:05] [31;1m"GET /phpmyadmin-old/index.php HTTP/1.1" 400 67668[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:05] [31;1m"GET /pma-old/index.php HTTP/1.1" 400 67591[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:06] [31;1m"GET /claroline/phpMyAdmin/index.php HTTP/1.1" 400 67734[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:07] [31;1m"GET /typo3/phpmyadmin/index.php HTTP/1.1" 400 67690[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:07] [31;1m"GET /phpma/index.php HTTP/1.1" 400 67569[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:08] [31;1m"GET /phpmyadmin/phpmyadmin/index.php HTTP/1.1" 400 67745[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:09] [31;1m"GET /phpMyAdmin/phpMyAdmin/index.php HTTP/1.1" 400 67745[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:10] [31;1m"GET /help.php HTTP/1.1" 400 67492[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:10] [31;1m"GET /java.php HTTP/1.1" 400 67492[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:11] [31;1m"GET /_query.php HTTP/1.1" 400 67514[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:12] [31;1m"GET /x.php HTTP/1.1" 400 67459[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:13] [31;1m"GET /desktop.ini.php HTTP/1.1" 400 67569[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:13] [31;1m"GET /z.php HTTP/1.1" 400 67459[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:14] [31;1m"GET /lala.php HTTP/1.1" 400 67492[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:15] [31;1m"GET /cmd.php HTTP/1.1" 400 67481[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:15] [31;1m"GET /cmx.php HTTP/1.1" 400 67481[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:16] [31;1m"GET /cmv.php HTTP/1.1" 400 67481[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:17] [31;1m"GET /cmdd.php HTTP/1.1" 400 67492[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 07:42:18] [31;1m"GET /text.php HTTP/1.1" 400 67492[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 08:22:24] [31;1m"GET /muieblackcat HTTP/1.1" 400 67663[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 08:22:29] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67839[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 08:22:30] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67839[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 08:22:30] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67762[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 08:22:30] [31;1m"GET /myadmin/scripts/setup.php HTTP/1.1" 400 67806[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 08:22:30] [31;1m"GET /MyAdmin/scripts/setup.php HTTP/1.1" 400 67806[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 08:22:30] [31;1m"GET /PHPMYADMIN/scripts/setup.php HTTP/1.1" 400 67839[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 09:34:02] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 12:16:29] [31;1m"GET /muieblackcat HTTP/1.1" 400 67663[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 14:31:56] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 16:46:24] [31;1m"GET /manager/html HTTP/1.1" 400 67788[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:02:39] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:25] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67824[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:27] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67824[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:28] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67747[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:29] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67824[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:31] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67769[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:32] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67791[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:34] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67769[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:35] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:36] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:38] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:39] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:40] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67703[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:42] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67846[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:43] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:44] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 17:40:46] [31;1m"GET /setup.php HTTP/1.1" 400 67615[0m
+Invalid HTTP_HOST header: '180.163.113.82'. You may need to add '180.163.113.82' to ALLOWED_HOSTS.
+[28/Mar/2018 18:14:17] [31;1m"HEAD /check_proxy HTTP/1.1" 400 67298[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 20:41:37] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[28/Mar/2018 22:17:11] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 00:01:53] [31;1m"GET / HTTP/1.1" 400 67535[0m
+Not Found: /robots.txt
+[29/Mar/2018 00:53:19] [33m"GET /robots.txt HTTP/1.1" 404 3276[0m
+{'object': <Contact: Contact object>, 'view': <cpdb_core.views.ContactView object at 0x7f1af9489b70>}
+[29/Mar/2018 00:53:23] [m"GET /contact HTTP/1.1" 200 3293[0m
+Invalid HTTP_HOST header: '0'. You may need to add '0' to ALLOWED_HOSTS.
+[29/Mar/2018 03:02:30] [31;1m"GET / HTTP/1.1" 400 67200[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 04:55:54] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 05:57:04] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 10:26:26] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 12:50:46] [31;1m"GET / HTTP/1.1" 400 67445[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:00] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:01] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:02] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67746[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:04] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:05] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67768[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:06] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67790[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:07] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67768[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:08] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:09] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:10] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:12] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:13] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67702[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:14] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67845[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:15] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:16] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:03:17] [31;1m"GET /setup.php HTTP/1.1" 400 67614[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 13:44:20] [31;1m"GET / HTTP/1.1" 400 67403[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 14:30:01] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 16:09:48] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 17:56:48] [31;1m"GET / HTTP/1.1" 400 67569[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 18:41:18] [31;1m"GET /cgi/common.cgi HTTP/1.1" 400 67544[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 18:41:19] [31;1m"GET /stssys.htm HTTP/1.1" 400 67500[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 18:41:21] [31;1m"GET / HTTP/1.1" 400 67390[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 18:41:22] [31;1m"POST /command.php HTTP/1.1" 400 67754[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 19:28:52] [31;1m"GET / HTTP/1.1" 400 67170[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 20:31:45] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[29/Mar/2018 22:02:10] [31;1m"GET / HTTP/1.1" 400 67524[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 22:04:37] [31;1m"GET /muieblackcat HTTP/1.1" 400 67661[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 22:42:49] [31;1m"GET / HTTP/1.1" 400 67535[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[29/Mar/2018 23:08:04] [31;1m"GET / HTTP/1.1" 400 67401[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 00:52:47] [31;1m"GET / HTTP/1.1" 400 67535[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 04:42:47] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[30/Mar/2018 08:23:12] [31;1m"GET / HTTP/1.1" 400 67355[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[30/Mar/2018 08:23:22] [31;1m"GET /webdav HTTP/1.1" 400 67426[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[30/Mar/2018 08:24:12] [31;1m"GET / HTTP/1.1" 400 67356[0m
+Invalid HTTP_HOST header: 'www.cpdb.ddg.biol.uw.edu.pl'. You may need to add 'www.cpdb.ddg.biol.uw.edu.pl' to ALLOWED_HOSTS.
+[30/Mar/2018 08:24:12] [31;1m"GET / HTTP/1.1" 400 67356[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:08] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67824[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:09] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67824[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:13] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67747[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:14] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67824[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:15] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67769[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:16] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67791[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:17] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67769[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:18] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:19] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:20] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:21] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:22] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67703[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:23] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67846[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:24] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:25] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67835[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:00:26] [31;1m"GET /setup.php HTTP/1.1" 400 67615[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:10] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:11] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:11] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67745[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:11] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67822[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:12] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:12] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67789[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:12] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67767[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:12] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:13] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:13] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:13] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:14] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67701[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:14] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67844[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:14] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:14] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67833[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:15:15] [31;1m"GET /setup.php HTTP/1.1" 400 67613[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:28:13] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:58:05] [31;1m"GET /wp-includes/wlwmanifest.xml HTTP/1.1" 400 67946[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:58:53] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:58:55] [31;1m"GET /phpMyAdmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:58:56] [31;1m"GET /pma/scripts/setup.php HTTP/1.1" 400 67746[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:58:58] [31;1m"GET /PhpMyAdmin/scripts/setup.php HTTP/1.1" 400 67823[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:00] [31;1m"GET /mysql/scripts/setup.php HTTP/1.1" 400 67768[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:02] [31;1m"GET /dbadmin/scripts/setup.php HTTP/1.1" 400 67790[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:03] [31;1m"GET /admin/scripts/setup.php HTTP/1.1" 400 67768[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:05] [31;1m"GET /phpMyAdmin/_scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:07] [31;1m"GET /phpmyadmin/_scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:09] [31;1m"GET /phpMyAdmin2/scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:10] [31;1m"GET /phpMyAdmin1/scripts/setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:12] [31;1m"GET /scripts/setup.php HTTP/1.1" 400 67702[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:14] [31;1m"GET /php-my-admin/scripts/setup.php HTTP/1.1" 400 67845[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:16] [31;1m"GET /phpmyadmin/scripts/_setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:18] [31;1m"GET /phpMyAdmin/scripts/_setup.php HTTP/1.1" 400 67834[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 09:59:19] [31;1m"GET /setup.php HTTP/1.1" 400 67614[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 10:00:04] [31;1m"GET / HTTP/1.1" 400 67807[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 10:00:04] [31;1m"GET / HTTP/1.1" 400 67807[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 10:00:04] [31;1m"GET / HTTP/1.1" 400 67807[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 10:00:05] [31;1m"GET /HNAP1/ HTTP/1.1" 400 68013[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 10:00:05] [31;1m"GET /HNAP1/ HTTP/1.1" 400 68013[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 10:00:05] [31;1m"GET /HNAP1/ HTTP/1.1" 400 68013[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 14:04:14] [31;1m"GET / HTTP/1.1" 400 67291[0m
+Not Found: /robots.txt
+[30/Mar/2018 14:16:04] [33m"GET /robots.txt HTTP/1.1" 404 3276[0m
+[30/Mar/2018 14:16:08] [m"GET / HTTP/1.1" 200 4544[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 14:28:19] [31;1m"GET /ccvv HTTP/1.1" 400 67490[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 14:29:14] [31;1m"GET / HTTP/1.1" 400 67265[0m
+{'object': <Contact: Contact object>, 'view': <cpdb_core.views.ContactView object at 0x7f1af922a860>}
+[30/Mar/2018 15:39:15] [m"GET /contact HTTP/1.1" 200 3293[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 17:40:24] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 18:07:44] [31;1m"POST /wls-wsat/CoordinatorPortType HTTP/1.1" 400 67672[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[30/Mar/2018 19:24:32] [31;1m"GET / HTTP/1.1" 400 67135[0m
+Forbidden (CSRF cookie not set.): /
+[30/Mar/2018 19:49:45] [31;1m"PROPFIND / HTTP/1.1" 403 2857[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[31/Mar/2018 01:35:32] [31;1m"GET /manager/html HTTP/1.1" 400 67789[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[31/Mar/2018 02:02:47] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[31/Mar/2018 03:30:47] [31;1m"GET /robots.txt HTTP/1.1" 400 67641[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[31/Mar/2018 04:18:15] [31;1m"GET /winbox.png HTTP/1.1" 400 67383[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[31/Mar/2018 04:49:31] [31;1m"GET /LoginPage.do HTTP/1.1" 400 67564[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[31/Mar/2018 07:00:15] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[31/Mar/2018 09:27:14] [31;1m"GET / HTTP/1.1" 400 67265[0m
+Invalid HTTP_HOST header: 'ddg'. You may need to add 'ddg' to ALLOWED_HOSTS.
+[31/Mar/2018 09:59:14] [31;1m"HEAD / HTTP/1.1" 400 67543[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[31/Mar/2018 12:32:10] [31;1m"GET / HTTP/1.1" 400 67136[0m
+Invalid HTTP_HOST header: '212.87.9.193:80'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[31/Mar/2018 12:36:47] [31;1m"GET / HTTP/1.1" 400 67569[0m
+Invalid HTTP_HOST header: '212.87.9.193'. You may need to add '212.87.9.193' to ALLOWED_HOSTS.
+[31/Mar/2018 12:52:46] [31;1m"GET /phpmyadmin/scripts/setup.php HTTP/1.1" 400 67822[0m
