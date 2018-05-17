@@ -85,6 +85,7 @@ class InputFile(models.Model):
 
     upload_date = models.DateTimeField(auto_now_add=True)
     uploaded_file = models.FileField()
+    times_checked = models.IntegerField(default=0)
 
     def load_file(self):
 
@@ -92,32 +93,36 @@ class InputFile(models.Model):
         unique_anti_class = {}
         unique_gene = {}
         res_lines = []
-        with self.uploaded_file.open("rt") as input_file:
+        with open(self.uploaded_file.path, 'r') as csvfile:
             reader = csv.reader(csvfile)
 
             # skipping header
             _ = next(reader)
 
-            for line in reader:
+            for i, line in enumerate(reader):
                 cleaned_line = []
                 line_with_types = zip(line, INPUT_FILE_COLS_TYPES)
                 for pair in line_with_types:
                     if pair[1] == str:
-                        cleaned_line.push(pair[0])
+                        cleaned_line.append(pair[0])
                     elif pair[1] == float:
-                        cleaned_line.push(float(pair[0]))
+                        cleaned_line.append(float(pair[0]))
                     elif pair[1] == '%':
                         data = float(pair[0].strip('%')) / 100
                         cleaned_line.append(data)
 
                 line_dict = dict(zip(INPUT_FILE_HEADER, cleaned_line))
+                line_dict['file_line_id'] = i+2
 
                 line_dict['antibiotic_class'] = line_dict['antibiotic_class'].capitalize()
                 line_dict["gene_name"] = re.sub('_[1-9]*$', '', line_dict["gene_name_variants"])
                 del line_dict['gene_name_variants']
 
                 unique_anti_class[line_dict['antibiotic_class']] = 0
-                unique_gene[line_dict["gene_name_variants"]] = 0
+                unique_gene[line_dict["gene_name"]] = {
+                    'instance_id': 0,
+                    'anti_class': line_dict['antibiotic_class']
+                    }
                 res_lines.append(line_dict)
 
         # 2. delete data in anti_class, gene and primer pair tables
@@ -129,13 +134,25 @@ class InputFile(models.Model):
         for anti_class_name in unique_anti_class:
             new = AntibioticClass.objects.create(name=anti_class_name)
             new.save()
-            unique_anti_class[anti_class_name] = new.id
+            unique_anti_class[anti_class_name] = new
 
         for gene_name in unique_gene:
-            new = ARGene.objects.create(name=gene_name)
+            antibiotic_class = unique_anti_class[unique_gene[gene_name]['anti_class']]
+            new = ARGene.objects.create(name=gene_name, antibiotic_class=antibiotic_class)
             new.save()
-            unique_gene[gene_name] = new.id
+            unique_gene[gene_name] = new
 
+        for record in res_lines:
+            record['antibiotic_class'] = unique_anti_class[record['antibiotic_class']]
+            record['gene_name'] = unique_gene[record['gene_name']]
+            try:
+                new = ARGPrimerPair(**record)
+                new.save()
+            except Exception as e:
+                print(str(e))
+                raise Exception("Error when processing line: {0}. Please check data formats.\n".format(record['file_line_id']))
+
+        return True
 
 
     def restore_last_correct_file(self):

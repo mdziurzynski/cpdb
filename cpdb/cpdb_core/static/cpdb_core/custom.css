@@ -17,3 +17,10 @@ navbar-custom {
     background-color: transparent;
 
 }
+.grid-item {
+    width: 20%;
+}
+.flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+}

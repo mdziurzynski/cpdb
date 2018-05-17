@@ -1,0 +1,28 @@
+{% extends "cpdb_args/args_base.html" %}
+{% load static %}
+{% block args_body %}
+<h3>CSV file upload - building a new database.</h3>
+<br/>
+{% if error %}
+    <br/>
+    <div class="alert alert-danger "><strong>{{ error }}</strong></div>
+    <br/>
+{% endif %}
+<h4>Please check the line below ({{ check_no }}/3):</h4>
+<br/>
+<ul>
+{% for key, value in line_to_check.items %}
+    <li><strong>{{ key }}</strong><br/>{{ value }}</li>
+{% endfor %}
+</ul>
+<br/>
+<form action="/args/args_file_upload/{{ inputfile_id }}/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="file_upload_password">Password: </label>
+    <input type="password" id="file_upload_password" name="file_upload_password" maxlength="254" placeholder="password">
+    <br/>
+    <br/>
+    <input type="submit" name="submit_value" value="correct" class="btn btn-primary"/>
+    <input type="submit" name="submit_value" value="incorrect" class="btn btn-danger"/>
+</form>
+{% endblock %}

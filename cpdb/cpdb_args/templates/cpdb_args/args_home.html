@@ -7,11 +7,9 @@
             <div class="card border-secondary mb-3 grid-item" style="min-width: 15rem; max-width: 20rem">
                 <a href="{% url 'cpdb_args:args_antibiotic_class' class.pk %}"><div class="card-header">{{class.name}}</div></a>
                 <div class="card-body text-secondary">
-                    <!--<h5 class="card-title">Secondary card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
                     <ul>
                         {% for gene in class.argene_set.all %}
-                            <li class="font-italic">{{ gene.name }}</li>
+                            <li class="font-italic"><a href="{% url 'cpdb_args:args_argene' gene.pk %}">{{ gene.name }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>

@@ -1,11 +1,14 @@
 import csv
+import random
+from collections import OrderedDict
 
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.urls import reverse
 
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
 
-from cpdb_args.models import AntibioticClass, ARGene, InputFile, INPUT_FILE_HEADER
+from cpdb_args.models import AntibioticClass, ARGene, InputFile, ARGPrimerPair, INPUT_FILE_HEADER
 from cpdb_args.forms import InputFileForm
 
 
@@ -17,7 +20,7 @@ class ARGHomeView(TemplateView):
     template_name = "cpdb_args/args_home.html"
 
     def get(self, request, *args, **kwargs):
-        args_classes = AntibioticClass.objects.all()
+        args_classes = AntibioticClass.objects.all().order_by('name')
         return render(request, self.template_name, {'object_list': args_classes})
 
 
@@ -56,8 +59,6 @@ class InputFileView(TemplateView):
 
         if form.is_valid():
 
-            print("success")
-
             new_record = form.save()
             with open(new_record.uploaded_file.path) as csvfile:
                 reader = csv.reader(csvfile)
@@ -69,50 +70,79 @@ class InputFileView(TemplateView):
                         'context': context,
                         'error': "BAD CSV HEADER!<br/><br/>RECEIVED HEADER:{0}".format(header)})
             try:
-                new_record.load_file()
+                res = new_record.load_file()
+                if res:
+                    return redirect("/args/args_file_upload/{0}/".format(new_record.id))
+
             except Exception as e:
                 new_record.delete()
-                InputFile.restore_last_correct_file()
-                raise Exception(e)
-            
+                InputFile.restore_last_correct_file(InputFile)
+                return render(request, self.template_name, {
+                    'form': form,
+                    'context': context,
+                    'error': str(e)})
+
         else:
-            return render(request, self.template_name, {'form': form, 'context': context, 'error': "INVALID FORM DATA!"})
+            return render(
+                request, self.template_name, {
+                    'form': form,
+                    'context': context,
+                    'error': "INVALID FORM DATA!"
+                    })
 
 
-# class ARClassListView(ListView):
+class InputFileConfirmView(TemplateView):
 
-#     model = AntibioticClass
+    def _get_line_to_check(self, inputfile_id):
+        line_to_check = random.choice(ARGPrimerPair.objects.all())
+        sorted_values_list = []
+        for key in INPUT_FILE_HEADER:
+            if key == 'gene_name_variants':
+                sorted_values_list.append(line_to_check.gene_name.name)
+            elif key == 'antibiotic_class':
+                sorted_values_list.append(line_to_check.antibiotic_class.name)
+            else:
+                sorted_values_list.append(line_to_check.__dict__[key])
+        res = OrderedDict(zip(INPUT_FILE_HEADER, sorted_values_list))
+        res['line_id'] = line_to_check.file_line_id
+        res.move_to_end('line_id', last=False)
 
-#     def get_context_data(self, **kwargs):
-#         context = super().get_context_data(**kwargs)
-#         context['object_list'] = AntibioticClass.objects.all().order_by('name')
-#         print(context)
-#         return context
+        return res
 
-# class ARClassDetailView(DetailView):
+    def get(self, request, inputfile_id, *args, **kwargs):
+        inputfile_instance = InputFile.objects.get(id=inputfile_id)
+        if inputfile_instance.times_checked < 3:
+            return render(request, "cpdb_args/args_input_check.html", {
+                'line_to_check': self._get_line_to_check(inputfile_id),
+                'inputfile_id': inputfile_id,
+                'check_no': inputfile_instance.times_checked + 1
+                })
+        else:
+            return render(request, "cpdb_args/args_input_success.html")
 
-#     model = AntibioticClass
+    def post(self, request, inputfile_id, *args, **kwargs):
+        if request.POST["file_upload_password"] != INPUT_FILE_PASSWORD:
+            return render(request, "cpdb_args/args_input_check.html", {
+                'line_to_check': self._get_line_to_check(inputfile_id),
+                'inputfile_id': inputfile_id,
+                'error': "WRONG PASSWORD!",
+                })
 
-#     def get_context_data(self, **kwargs):
-#         context = super(ARClassDetailView, self).get_context_data(**kwargs)
-#         return context
+        elif request.POST['submit_value'] == 'incorrect':
+            InputFile.objects.get(id=inputfile_id).delete()
+            InputFile.restore_last_correct_file(InputFile)
+            return redirect("cpdb_args:args_file_upload")
 
+        else:
+            inputfile_instance = InputFile.objects.get(id=inputfile_id)
+            inputfile_instance.times_checked += 1
+            inputfile_instance.save()
 
-# class TargetGeneDetailView(DetailView):
-
-#     model = TargetGene
-
-#     def get_context_data(self, **kwargs):
-#         context = super(TargetGeneDetailView, self).get_context_data(**kwargs)
-#         return context
-
-
-# class FileLinkListView(ListView):
-
-#     model = FileLink
-
-#     def get_context_data(self, **kwargs):
-#         context = super().get_context_data(**kwargs)
-#         context['object_list'] = FileLink.objects.all().order_by('creation_datetime')
-#         print(context)
-#         return context
+            if inputfile_instance.times_checked < 3:
+                return render(request, "cpdb_args/args_input_check.html", {
+                    'line_to_check': self._get_line_to_check(inputfile_id),
+                    'inputfile_id': inputfile_id,
+                    'check_no': inputfile_instance.times_checked + 1
+                    })
+            else:
+                return render(request, "cpdb_args/args_input_success.html")
